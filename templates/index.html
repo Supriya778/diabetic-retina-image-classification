@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Prediction</title>
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2017/07/18/23/23/eye-2519517_960_720.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            color: white;
+            background-color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetic Retinopathy Prediction</h1>
+        <form action="/success" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Select Image
+            </label>
+            <input id="file-upload" type="file" name="file" accept="image/*" />
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
