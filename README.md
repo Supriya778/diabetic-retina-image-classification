@@ -9,5 +9,5 @@ The project is about  diabetic retina image classification,
 
 get the data sets for koggle
 
-densnet121 convalustion neural network using mechine learning
+densnet121 convalustion neural network using machine learning
 
